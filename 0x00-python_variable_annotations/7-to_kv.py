@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """function annotation"""
-from typing import List
+from typing import List, Union
 
 
 def to_kv(k: str, v: Union[int. float]) -> Tuple:
