@@ -1,5 +1,6 @@
 #!/usr/bin/env puthon3
 """practicing asynchronous coroutine"""
+import random
 
 
 async def wait_random(max_delay: int =10):
