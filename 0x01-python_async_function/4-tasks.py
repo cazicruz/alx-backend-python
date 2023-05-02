@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """re-creating wait_n"""
+from typing import List
 
 task_wait_random = __import__('3-tasks').task_wait_random
 
