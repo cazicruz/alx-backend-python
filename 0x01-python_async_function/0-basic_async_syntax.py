@@ -1,4 +1,4 @@
-#!/usr/bin/env puthon3
+#!/usr/bin/env python3
 """practicing asynchronous coroutine"""
 import random
 import asyncio
