@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """ function calculates the time of execution of wait_n"""
+import time
 
 wait_n = __import__('1-concurrent_coroutines').wait_n
 
