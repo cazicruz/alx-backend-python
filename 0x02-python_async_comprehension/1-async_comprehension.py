@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 """async generator func"""
 from typing import Generator
-import asyncio
-import random
+import asyncio, random
+
+async_generator = __import__('0-async_generator').async_generator
 
 
-async def async_generator() -> Generator[int, None, None]:
-    """ the function would loop 10x and yeild a random value"""
-    i = 0
-    while i < 10:
-        await asyncio.sleep(1)
-        yield(random.uniform(0,10))
+async def async_comprehension() -> Generator[int, None, None]:
+    """ returns 10 random value from async_generator"""
+    return[await async_generator]
