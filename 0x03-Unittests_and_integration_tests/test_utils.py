@@ -8,11 +8,11 @@ from typing import Mapping, Sequence, Any
 
 class TestAccessNestedMap(unittest.TestCase):
     @parameterized.expand([
-        ("one",({"a": 1}), ("a",), 1),
-        ("two",({"a": {"b": 2}}, ("a",), {"b":2}),
-        ("three", ({"a": {"b": 2}}), ("a", "b"), 2)
+        ({"a": 1}, ("a",), 1),
+        ({"a": {"b": 2}}, ("a",), {"b":2}),
+        ({"a": {"b": 2}}, ("a", "b"), 2)
         ])
-        def test_access_nested_map(self, name: str, a: Mapping,
+        def test_access_nested_map(self, a: Mapping,
                                     b: Sequence, expected: Any) -> None:
         """test the access_nested_map method"""
         nested_map = a
